@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.11
+FROM ubuntu:19.04
 CMD ["/sbin/my_init"]
 COPY root/ /
 RUN /root/glinstall.sh && /root/pznginstall.sh
