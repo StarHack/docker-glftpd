@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.11
+FROM phusion/baseimage:latest
 CMD ["/sbin/my_init"]
 COPY root/ /
 RUN /root/glinstall.sh && /root/pznginstall.sh
